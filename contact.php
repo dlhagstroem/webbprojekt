@@ -1,4 +1,4 @@
-<?php 
+<?php //test
 $pageTitle ="Kontakta oss";
 include("inc/header.php"); ?>
 

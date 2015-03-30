@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->
 
@@ -23,5 +22,3 @@
 			</ul>
 		</div>
 	</div>
-
-	<div id="content">

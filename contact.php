@@ -19,12 +19,10 @@ include("inc/header.php"); ?>
 
 	<h1>Kontakt</h1>
 	<?php 
-	if (isset($_GET['status']) AND $_GET["status"] == "sent"){ 
-	?>
+	if (isset($_GET['status']) AND $_GET["status"] == "sent"){ ?>
 			<p>Tack för ditt meddelande!</p>
 	<?php
-	} else {
-	?>
+	} else { ?>
 
 				<form method="post" action="contact.php">
 				<table>

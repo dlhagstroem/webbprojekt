@@ -1,10 +1,15 @@
 <html>
 <head>
 	<title><?php echo $pageTitle; ?></title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->
+
+	<!--databaskoppling-->
+	<?php $mysqli = new mysqli("localhost","root","","webbprojekt"); ?>
 </head>
 <body>
 	<div class="header">

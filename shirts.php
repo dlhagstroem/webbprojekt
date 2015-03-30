@@ -14,10 +14,10 @@ if($res->num_rows > 0)
 	{ ?>
 		<h2><?php echo $row->name; ?></h2>
 		<p><?php echo $row->description; ?></p>
-		<p><?php echo $row->price; ?></p>
+		<p><?php echo $row->price; ?> kr</p>
 		<img src="<?php echo $row->img_src; ?>">
 	<?php } ?>
 <?php } ?>
-?>
+
 
 <?php include("inc/footer.php"); ?>

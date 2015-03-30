@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title><?php echo $pageTitle; ?></title>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<!--plats för javascript -->

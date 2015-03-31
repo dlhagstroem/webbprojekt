@@ -2,13 +2,15 @@
 <head>
 	<title><?php echo $pageTitle; ?></title>
 	<meta charset="utf-8">
+
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->
 
-	<!--databaskoppling-->
-	<?php $mysqli = new mysqli("localhost","root","","webbprojekt"); ?>
+	<!--databaskoppling + utf8-->
+	<?php 	$mysqli = new mysqli("localhost","root","","webbprojekt");
+			$mysqli->set_charset("utf8"); ?>
 </head>
 <body>
 	<div class="header">

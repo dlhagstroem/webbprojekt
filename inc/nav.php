@@ -22,10 +22,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Kontakt</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mitt Inlogg<span class="caret"></span></a>
-          <ul id="navshadow" class="dropdown-menu" role="menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
             <li><a href="#">Inställningar</a></li>
-            <li><a href="homebreds.php">Varukorg</a></li>
+            <li><a href="#">Varukorg</a></li>
             <li class="divider"></li>
             <li><a href="#">Logga ut</a></li>
           </ul>

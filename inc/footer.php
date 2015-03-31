@@ -8,8 +8,8 @@
 </div>
 
 <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="css/dist/js/jquery-1.10.2.js"></script>
+    <script src="css/dist/js/bootstrap.js"></script>
 
 </body>
 </html>

@@ -14,11 +14,4 @@
 </head>
 <body>
 <?php include("nav.php"); ?>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h1>Coola T-shirtar</h1>
-			</div>
-		</div>
-	</div>
 

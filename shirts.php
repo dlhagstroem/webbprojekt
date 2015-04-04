@@ -19,25 +19,38 @@ if($res->num_rows > 0)
 {
 	while($row = $res->fetch_object())
 	{ ?>
-	<div class="col-md-4">
+	<div class="col-xs-6 col-md-3">
 		<h2><?php echo $row->name; ?></h2>
 		<p><?php echo $row->description; ?></p>
 		<p><?php echo $row->price; ?> kr</p>
+		<a href="#" class="thumbnail">
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>">
+		</a>
 	</div> <!-- col end -->
-	<div class="col-md-4">
+	<div class="col-xs-6 col-md-3">
 		<h2>title</h2>
 		<p>desc</p>
 		<p>0 kr</p>
-		<img class='img-responsive' src="http://placehold.it/200x200">
+		<a href="#" class="thumbnail">
+		<img class='img-responsive' src="">
+		</a>
 	</div> <!-- col end -->
-	<div class="col-md-4">
+	<div class="col-xs-6 col-md-3">
 		<h2>title</h2>
 		<p>desc</p>
 		<p>0 kr</p>
-		<img class='img-responsive' src="http://placehold.it/200x200">
+		<a href="#" class="thumbnail">
+		<img class='img-responsive' src="">
+		</a>
 	</div> <!-- col end -->
-
+	<div class="col-xs-6 col-md-3">
+		<h2>title</h2>
+		<p>desc</p>
+		<p>0 kr</p>
+		<a href="#" class="thumbnail">
+		<img class='img-responsive' src="">
+		</a>
+	</div> <!-- col end -->
 	<?php } ?>
 <?php } ?>
 	</div> <!-- row end -->

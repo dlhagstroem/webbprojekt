@@ -17,14 +17,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $pageTitle ="Kontakta oss";
 include("inc/header.php"); ?>
 
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
 	<h1>Kontakt</h1>
 	<?php 
 	if (isset($_GET['status']) AND $_GET["status"] == "sent"){ ?>
 			<p>Tack för ditt meddelande!</p>
+	</div>
+	<div class="col-md-12">
 	<?php
 	} else { ?>
 
-				<form method="post" action="contact.php">
+				<form role="form" method="post" action="contact.php">
 				<table>
 					<tr>
 						<th>
@@ -56,6 +62,7 @@ include("inc/header.php"); ?>
 	<?php
 	} 
 	?>
-
-
+</div>
+</div>
+</div>
 <?php include("inc/footer.php"); ?>

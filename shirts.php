@@ -32,7 +32,7 @@ if($res->num_rows > 0)
 		<p>desc</p>
 		<p>0 kr</p>
 		<a href="#" class="thumbnail">
-		<img class='img-responsive' src="">
+		<img class='img-responsive' src="http://placehold.it/200x200">
 		</a>
 	</div> <!-- col end -->
 	<div class="col-xs-6 col-md-3">
@@ -40,7 +40,7 @@ if($res->num_rows > 0)
 		<p>desc</p>
 		<p>0 kr</p>
 		<a href="#" class="thumbnail">
-		<img class='img-responsive' src="">
+		<img class='img-responsive' src="http://placehold.it/200x200">
 		</a>
 	</div> <!-- col end -->
 	<div class="col-xs-6 col-md-3">
@@ -48,7 +48,7 @@ if($res->num_rows > 0)
 		<p>desc</p>
 		<p>0 kr</p>
 		<a href="#" class="thumbnail">
-		<img class='img-responsive' src="">
+		<img class='img-responsive' src="http://placehold.it/200x200">
 		</a>
 	</div> <!-- col end -->
 	<?php } ?>

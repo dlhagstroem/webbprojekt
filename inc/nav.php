@@ -15,12 +15,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.php">Hem</a></li>
-        <li><a href="#">Om oss</a></li>
+        <li><a href="about.php">Om oss</a></li>
         <li><a href="shirts.php">T-shirts</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="contact.php">Kontakt</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mitt Inlogg <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">

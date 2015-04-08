@@ -6,7 +6,7 @@ include("inc/header.php"); ?>
 				ORDER BY created_at DESC' ?>
 <?php $res = $mysqli->query($query); ?>
 
-	<div class="container">
+	<div id="mainstyle" class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h1>Våra T-shirtar</h1>

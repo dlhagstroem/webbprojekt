@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-12 text-center">
 
 	<p>&copy;<?php echo date ('Y'); ?>Coola T-shirtar</p>
 		</div>

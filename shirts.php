@@ -2,9 +2,9 @@
 $pageTitle ="T-shirtar";
 include("inc/header.php"); ?>
 
-<?php $query = 'SELECT * FROM products 
+<?php /* $query = 'SELECT * FROM products 
 				ORDER BY created_at DESC' ?>
-<?php $res = $mysqli->query($query); ?>
+<?php $res = $mysqli->query($query); */?>
 
 	<div id="mainstyle" class="container">
 		<div class="row">
@@ -14,13 +14,12 @@ include("inc/header.php"); ?>
 		</div> <!-- row end -->
 		<div class="row">
 
-<?php 
+<?php /*
 if($res->num_rows > 0)
 {
 	while($row = $res->fetch_object())
 	{ ?>
 
-	<!---
 	<div class="col-xs-6 col-md-3">
 		<div class="thumbnail">
 		<h2><?php echo $row->name; ?></h2>
@@ -29,14 +28,14 @@ if($res->num_rows > 0)
 	
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>">
 		</div>
-	</div> col end // Utkommenterad till databasen är i funktion! -->
+	</div> <!-- col end-->
 	
 	<?php } ?>
-<?php } ?>
+<?php } */?>
 
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/245x200">
+			<img class='img-responsive' src="http://placehold.it/250x200">
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
@@ -45,7 +44,7 @@ if($res->num_rows > 0)
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/245x200">
+			<img class='img-responsive' src="http://placehold.it/250x200">
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
@@ -54,7 +53,7 @@ if($res->num_rows > 0)
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/245x200">
+			<img class='img-responsive' src="http://placehold.it/250x200">
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
@@ -63,7 +62,7 @@ if($res->num_rows > 0)
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/245x200">
+			<img class='img-responsive' src="http://placehold.it/250x200">
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">

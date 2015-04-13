@@ -16,9 +16,10 @@ include("inc/header.php"); ?>
 		<div class="col-md-4">
 			<div id="stopbully">
 				<div class="framebully wedo">
-				Say no to<p>
-				<span class="sayno">bullying!</span><p>
-				<span class="boardbig">We do!</span>
+				Säg <strong>Nej</strong> till<p>
+				<span class="sayno">Mobbning!</span><p>
+				Vi gör<p>
+				<span class="boardbig">Det!</span>
 				</div>
 			</div>
 		</div> <!-- col end -->

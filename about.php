@@ -14,8 +14,10 @@ include("inc/header.php"); ?>
 			text
 		</div> <!-- col end -->
 		<div id="stopbully" class="col-md-4">
-			<div class="framebully">
-			text
+			<div id="stopbully">
+				<div class="framebully">
+				text
+				</div>
 			</div>
 		</div> <!-- col end -->
 	</div> <!-- row end -->

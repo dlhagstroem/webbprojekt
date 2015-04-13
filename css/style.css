@@ -1,4 +1,7 @@
 #mainstyle {background-color:#F2F2F2;}
-#stopbully {background-color:#AB0717; padding: 6px; margin:10px;}
+#stopbully {background-color:#AB0717; padding: 6px; margin: 0 10px 0 10px;}
 .framebully {background-color:transparent; border:2px dashed #fff;
 	padding: 13px; color:#fff; text-align:center;}
+.sayno {font-family: 'Dancing Script', cursive; font-size:30px;}
+.wedo {font-family: 'Arial', sans-serif; font-size:20px; text-transform:uppercase;}
+.boardbig {cursive; font-size:33px;}

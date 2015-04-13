@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 	<!--databaskoppling + utf8-->

@@ -5,6 +5,14 @@
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<style type="text/css"> 
+     @font-face {   font-family: 'Glyphicons Halflings';   
+     src: url('../fonts/glyphicons-halflings-regular.eot');   
+     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+     url('../fonts/glyphicons-halflings-regular.woff') format('woff'),  
+     url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+     url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
+	</style>
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->
 	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>

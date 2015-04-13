@@ -55,7 +55,7 @@ if($res->num_rows > 0)
 	<?php } */?>
 
 		</div> <!-- col end -->
-		<div class="col-md-9">
+		<div class="col-md-8">
 		beskrivning
 		</div> <!-- col end -->
 	</div> <!-- row end -->

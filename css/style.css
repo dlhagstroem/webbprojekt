@@ -1,4 +1,4 @@
 #mainstyle {background-color:#F2F2F2;}
-#stopbully {background-color:#AB0717; padding: 6px;}
+#stopbully {background-color:#AB0717; padding: 6px; margin:10px;}
 .framebully {background-color:transparent; border:2px dashed #fff;
-	padding: 13px; color:#fff;}
+	padding: 13px; color:#fff; text-align:center;}

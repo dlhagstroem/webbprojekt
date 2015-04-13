@@ -30,7 +30,7 @@
             <li><a href="#">Logga ut</a></li>
           </ul>
         </li>
-        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> (1)</span></a></li>
+        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">(1)</span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -37,33 +37,29 @@ if($res->num_rows > 0)
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
 			<h2>Title, <small>0 kr</small></h2>
-			<p>beskrivning</p>
-		
 			<img class='img-responsive' src="http://placehold.it/200x200">
+			<p>beskrivning</p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
 			<h2>Title, <small>0 kr</small></h2>
-			<p>beskrivning</p>
-		
 			<img class='img-responsive' src="http://placehold.it/200x200">
+			<p>beskrivning</p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
 			<h2>Title, <small>0 kr</small></h2>
-			<p>beskrivning</p>
-		
 			<img class='img-responsive' src="http://placehold.it/200x200">
+			<p>beskrivning</p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
 			<h2>Title, <small>0 kr</small></h2>
-			<p>beskrivning</p>
-		
 			<img class='img-responsive' src="http://placehold.it/200x200">
+			<p>beskrivning</p>
 			</div>
 		</div> <!-- col end -->
 

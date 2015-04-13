@@ -13,8 +13,10 @@ include("inc/header.php"); ?>
 		<div class="col-md-6">
 			text
 		</div> <!-- col end -->
-		<div class="col-md-6">
+		<div id="stopbully" class="col-md-6">
+			<div class="framebully">
 			text
+			</div>
 		</div> <!-- col end -->
 	</div> <!-- row end -->
 </div> <!-- container end -->

@@ -36,7 +36,7 @@ if($res->num_rows > 0)
 
 		<div class="col-xs-6 col-md-3">
 			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/242x200">
+			<img class='img-responsive' src="http://placehold.it/">
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p algin="center">

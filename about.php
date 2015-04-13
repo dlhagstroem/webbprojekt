@@ -18,8 +18,8 @@ include("inc/header.php"); ?>
 				<div class="framebully wedo">
 				<p align="center">Säg <strong>Nej</strong> till</p>
 				<p><span class="krank">Kränkningar</span></p>
-				<p><span class="disk">Diskriminering</span></p>
 				<p><span class="mobbning">Mobbning</span></p>
+				<p><span class="disk">Diskriminering</span></p>
 				<p align="center">Vi gör <span class="boardbig">Det!</span></p>
 				</div>
 			</div>

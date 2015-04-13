@@ -1,10 +1,27 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
-	$email_body = "";
+	$name = trim($_POST['name']);
+	$email = trim($_POST['email']);
+	$message = trim($_POST['message']);
 
+	//validerar. säkerhet.
+	if($name == "" OR $email == "" OR $message == ""){
+		echo "Du måste fylla i alla fält";
+		exit;
+	}
+	foreach($POST as $value){
+		if (stripos($value, 'Content-Type:') !== FALSE){
+			echo "Problem med den information du angett.";
+			exit;
+		}
+	}
+	//fför att kolla om robotspammare fyller i det
+	if ($POST['adress'] !==""){
+		echo "Error.";
+		exit;
+	}
+
+	$email_body = "";
 	$email_body = $email_body . "Namn: " . $name . "\n";
 	$email_body = $email_body . "Email: " . $email . "\n";
 	$email_body = $email_body . "Meddelande: " . $message;
@@ -54,6 +71,16 @@ include("inc/header.php"); ?>
 						</th>
 						<td>
 							<textarea name="message" id="message"></textarea>
+						</td>
+					</tr>
+					<!-- fält som inte syns. för att kolla om robotspammare fyller i det -->
+					<tr style="diplay: none;">
+						<th>
+							<label for ="adress">Adress</label>
+						</th>
+						<td>
+							<input type="text" name="adress" id="message">
+							<p>Om du ser detta, var god lämna fältet blankt.</p>
 						</td>
 					</tr>
 				</table>

@@ -15,8 +15,5 @@ include("inc/header.php"); ?>
 	</div> <!-- row end -->
 </div> <!-- container end -->
 
-
-
-
 <?php include("inc/footer.php"); ?>
 		

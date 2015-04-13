@@ -8,8 +8,16 @@ if(isset($_GET['id']))
 	WHERE id = "{$_GET['id']}"'
 };?>
 
-
-<?php
+<div id="mainstyle" class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Title produkt #1</h1>
+			</div>
+		</div> <!-- row end -->
+		<div class="row">
+		<div class="col-md-4">
+			<img class='img-responsive' src="http://placehold.it/450x400">
+<?php /*
 $res = $mysqli->query($query);
 if($res->num_rows > 0)
 	{ ?>
@@ -23,4 +31,8 @@ if($res->num_rows > 0)
 		<p>Datum: <?php echo {$row->created_at}</p>?>
 
 
-	<?php } ?>
+	<?php } */?>
+
+</div> <!-- col end -->
+	</div> <!-- row end -->
+</div> <!-- container end -->

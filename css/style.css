@@ -3,11 +3,11 @@
 .framebully {background-color:transparent; border:2px dashed #fff;
 	padding: 13px; color:#fff;}
 .mobbning {font-family: 'Dancing Script', cursive; font-size:50px; 
-	text-transform:none; padding-right: 20px;}
+	text-transform:none; padding: 0 0 0 20px;}
 .disk {font-family: 'Dancing Script', cursive; font-size:45px; 
-	text-transform:none; padding-right: 10px;}
+	text-transform:none; padding: 0 0 0 10px;}
 .krank {font-family: 'Dancing Script', cursive; font-size:40px; 
-	text-transform:none; padding-right: 5px;}
+	text-transform:none; padding: 0 0 0 5px;}
 .wedo {font-family: 'Arial', sans-serif; font-size:30px; 
 	text-transform:uppercase;  text-align:center;}
-.boardbig {font-size:55px;  text-align:center;}
+.boardbig {font-size:55px;}

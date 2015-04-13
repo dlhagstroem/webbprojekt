@@ -16,7 +16,7 @@
       <ul class="nav navbar-nav">
         <li><a href="index.php">Hem</a></li>
         <li><a href="about.php">Om oss</a></li>
-        <li><a href="shirts.php">T-shirts</a></li>
+        <li><a href="shirts.php">Våra stödpaket</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

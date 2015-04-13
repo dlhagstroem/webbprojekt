@@ -33,9 +33,6 @@ if(isset($_GET['id']))
  					<td>1 kr</td>
  				</tr>
  				<tr>
- 					<td colspan="2">beskrivning</td>
- 				</tr>
- 				<tr>
  					<td style="font-weight:bold;">Datum:</td>
  					<td>#####</td>
  				</tr>
@@ -57,6 +54,9 @@ if($res->num_rows > 0)
 
 	<?php } */?>
 
-</div> <!-- col end -->
+		</div> <!-- col end -->
+		<div class="col-md-9">
+		beskrivning
+		</div> <!-- col end -->
 	</div> <!-- row end -->
 </div> <!-- container end -->

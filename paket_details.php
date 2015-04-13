@@ -17,6 +17,30 @@ if(isset($_GET['id']))
 		<div class="row">
 		<div class="col-md-4">
 			<img class='img-responsive' src="http://placehold.it/450x400">
+
+			<table class="table">
+ 			<tbody>
+ 				<tr>
+ 					<td style="font-weight:bold;">Produktnummer:</td>
+ 					<td>#1</td>
+ 				</tr>
+ 				<tr>
+ 					<td style="font-weight:bold;">Produktnamn:</td>
+ 					<td>Utbildningspaket</td>
+ 				</tr>
+ 				<tr>
+ 					<td style="font-weight:bold;">Pris:</td>
+ 					<td>1 kr</td>
+ 				</tr>
+ 				<tr>
+ 					<td colspan="2">beskrivning</td>
+ 				</tr>
+ 				<tr>
+ 					<td style="font-weight:bold;">Datum:</td>
+ 					<td>#####</td>
+ 				</tr>
+ 			</tbody>
+			</table>
 <?php /*
 $res = $mysqli->query($query);
 if($res->num_rows > 0)

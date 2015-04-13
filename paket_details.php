@@ -1,12 +1,12 @@
 <?php
 include('inc/header.php');
-
+/*
 if(isset($_GET['id']))
 {
 	$query = 
 	'SELECT * FROM paket
 	WHERE id = "{$_GET['id']}"'
-};?>
+};*/?>
 
 <div id="mainstyle" class="container">
 		<div class="row">

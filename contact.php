@@ -9,14 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		echo "Du måste fylla i alla fält";
 		exit;
 	}
-	foreach($POST as $value){
+	foreach($_POST as $value){
 		if (stripos($value, 'Content-Type:') !== FALSE){
 			echo "Problem med den information du angett.";
 			exit;
 		}
 	}
 	//för att kolla om robotspammare fyller i det
-	if ($POST['adress'] !==""){
+	if ($_POST['address'] !==""){
 		echo "Error.";
 		exit;
 	}
@@ -93,12 +93,12 @@ include("inc/header.php"); ?>
 						</td>
 					</tr>
 					<!-- fält som inte syns. för att kolla om robotspammare fyller i det -->
-					<tr style="diplay: none;">
+					<tr style="display: none;">
 						<th>
-							<label for ="adress">Adress</label>
+							<label for ="address">Address</label>
 						</th>
 						<td>
-							<input type="text" name="adress" id="message">
+							<input type="text" name="address" id="address">
 							<p>Om du ser detta, var god lämna fältet blankt.</p>
 						</td>
 					</tr>

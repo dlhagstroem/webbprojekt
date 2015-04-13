@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-lg-12 text-center">
 
-	<p>&copy;<?php echo date ('Y'); ?> Coola T-shirtar</p>
+	<p>&copy;<?php echo date ('Y'); ?> EDUCATE: NEJtillMOBBNING</p>
 		</div>
 	</div>
 </div>

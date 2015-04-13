@@ -11,8 +11,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 	<!--databaskoppling + utf8-->
-	<?php /* 	$mysqli = new mysqli("ideweb2.hh.se","denhag12","RTGyYphr3v","denhag12_db");
+
+	<?php  	$mysqli = new mysqli("ideweb2.hh.se","denhag12","RTGyYphr3v","denhag12_db");
 			$mysqli->set_charset("utf8"); */?>
+
 </head>
 <body>
 <?php include("nav.php"); ?>

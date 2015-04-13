@@ -37,14 +37,14 @@ if($res->num_rows > 0)
 		<p>0 kr</p>
 		<img class='img-responsive' src="http://placehold.it/200x200">
 	</div> <!-- col end -->
-	<div class="col-md-4">
+	
+	<?php } ?>
+<?php } ?><div class="col-md-4">
 		<h2>title</h2>
 		<p>desc</p>
 		<p>0 kr</p>
 		<img class='img-responsive' src="http://placehold.it/200x200">
 	</div> <!-- col end -->
-	<?php } ?>
-<?php } ?>
 	</div> <!-- row end -->
 </div> <!-- container end -->
 

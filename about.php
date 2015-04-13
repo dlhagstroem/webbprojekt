@@ -10,10 +10,10 @@ include("inc/header.php"); ?>
 			</div>
 		</div> <!-- row end -->
 		<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-9">
 			text
 		</div> <!-- col end -->
-		<div id="stopbully" class="col-md-6">
+		<div id="stopbully" class="col-md-3">
 			<div class="framebully">
 			text
 			</div>

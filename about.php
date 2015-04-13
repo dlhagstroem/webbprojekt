@@ -17,7 +17,9 @@ include("inc/header.php"); ?>
 			<div id="stopbully">
 				<div class="framebully wedo">
 				Säg <strong>Nej</strong> till<p>
-				<span class="sayno">Mobbning!</span><p>
+				<span class="krank">Kränkningar</span><p>
+				<span class="disk">Diskriminering</span><p>
+				<span class="mobbning">Mobbning !</span><p>
 				Vi gör <span class="boardbig">Det!</span>
 				</div>
 			</div>

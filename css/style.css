@@ -1,7 +1,13 @@
 #mainstyle {background-color:#F2F2F2;}
 #stopbully {background-color:#AB0717; padding: 6px; margin: 0 10px 10px 10px;}
 .framebully {background-color:transparent; border:2px dashed #fff;
-	padding: 13px; color:#fff; text-align:center;}
-.sayno {font-family: 'Dancing Script', cursive; font-size:60px; text-transform:none;}
-.wedo {font-family: 'Arial', sans-serif; font-size:40px; text-transform:uppercase;}
-.boardbig {cursive; font-size:55px;}
+	padding: 13px; color:#fff;}
+.mobbning {font-family: 'Dancing Script', cursive; font-size:60px; 
+	text-transform:none; padding-right: 20px;}
+.disk {font-family: 'Dancing Script', cursive; font-size:55px; 
+	text-transform:none; padding-right: 10px;}
+.krank {font-family: 'Dancing Script', cursive; font-size:50px; 
+	text-transform:none; padding-right: 5px;}
+.wedo {font-family: 'Arial', sans-serif; font-size:40px; 
+	text-transform:uppercase;  text-align:center;}
+.boardbig {font-size:55px;  text-align:center;}

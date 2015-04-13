@@ -19,14 +19,11 @@ if($res->num_rows > 0)
 {
 	while($row = $res->fetch_object())
 	{ ?>
-	<div class="col-xs-6 col-md-3">
-		<div class="thumbnail">
+	<div class="col-md-4">
 		<h2><?php echo $row->name; ?></h2>
 		<p><?php echo $row->description; ?></p>
 		<p><?php echo $row->price; ?> kr</p>
-	
-		<img class='img-responsive' src="<?php echo $row->picurl; ?>">
-		</div>
+		<img class='img-responsive' src="<?php echo $row->img_src; ?>">
 	</div> <!-- col end -->
 	<div class="col-md-4">
 		<h2>title</h2>

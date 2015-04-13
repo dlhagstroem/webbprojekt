@@ -15,16 +15,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			exit;
 		}
 	}
-	//fför att kolla om robotspammare fyller i det
+	//för att kolla om robotspammare fyller i det
 	if ($POST['adress'] !==""){
 		echo "Error.";
 		exit;
 	}
+	//importerat separat mailklass
+	require_once("inc/phpmailer/class.phpmailer.php");
+	$mail = new PHPMailer();
+
+	if(!$mail->ValidateAddress($email)){
+		echo "Du måste ange en korrekt mailadress.";
+	}
 
 	$email_body = "";
-	$email_body = $email_body . "Namn: " . $name . "\n";
-	$email_body = $email_body . "Email: " . $email . "\n";
+	$email_body = $email_body . "Namn: " . $name . "<br>";
+	$email_body = $email_body . "Email: " . $email . "<br>";
 	$email_body = $email_body . "Meddelande: " . $message;
+
+	$mail->SetFrom($email, $name);
+	$address = "linans12@student.hh.se";
+	$mail->AddAddress($address, "Coola T-shirtar");
+	$mail->Subject = "Coola T-shirtar kontakt | " . $name;
+	$mail->MsgHTML($email_body);
+
+	if(!$mail->Send()){
+		echo "Det uppstod problem med att skicka mailet:" . $mail->ErrorInfo;
+		exit;
+	}
+
 
 	header("Location: contact.php?status=sent");
 	exit;

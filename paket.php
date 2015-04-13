@@ -2,7 +2,7 @@
 $pageTitle ="T-shirtar";
 include("inc/header.php"); ?>
 
-<?php /* $query = 'SELECT * FROM products 
+<?php /* $query = 'SELECT * FROM paket 
 				ORDER BY created_at DESC' ?>
 <?php $res = $mysqli->query($query); */?>
 
@@ -27,6 +27,7 @@ if($res->num_rows > 0)
 		<p><?php echo $row->price; ?> kr</p>
 	
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>">
+		<a href="paket_details.php?id=<?php echo {$row->id}"?>>Läs mer</a><br>
 		</div>
 	</div> <!-- col end-->
 	

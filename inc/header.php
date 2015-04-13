@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	<style type="text/css"> 
      @font-face {   font-family: 'Glyphicons Halflings';   
-     src: url('../fonts/glyphicons-halflings-regular.eot');   
-     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-     url('../fonts/glyphicons-halflings-regular.woff') format('woff'),  
-     url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
-     url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
+     src: url('dist/css/fonts/glyphicons-halflings-regular.eot');   
+     src: url('dist/css/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+     url('dist/css/fonts/glyphicons-halflings-regular.woff') format('woff'),  
+     url('dist/css/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+     url('dist/css/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
 	</style>
 	<!--plats för javascript -->
 	<!--plats för något annat kanske -->

@@ -40,7 +40,7 @@ if($res->num_rows > 0)
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Köp</a></p>
+			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
@@ -49,7 +49,7 @@ if($res->num_rows > 0)
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Köp</a></p>
+			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
@@ -58,7 +58,7 @@ if($res->num_rows > 0)
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Köp</a></p>
+			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
 			</div>
 		</div> <!-- col end -->
 		<div class="col-xs-6 col-md-3">
@@ -67,7 +67,7 @@ if($res->num_rows > 0)
 			<h3>Title, <small>0 kr</small></h3>
 			<p>beskrivning</p>
 			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Köp</a></p>
+			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
 			</div>
 		</div> <!-- col end -->
 

@@ -72,3 +72,5 @@ if($res->num_rows > 0)
 		</div> <!-- col end -->
 	</div> <!-- row end -->
 </div> <!-- container end -->
+
+<?php include("inc/footer.php"); ?>

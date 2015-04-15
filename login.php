@@ -6,8 +6,9 @@ include ('inc/header.php');
 <?php 
 if(isset($_POST['username'])){
 	$query = 	'SELECT username, password, userId FROM users 
-				WHERE username = "{$_POST[username]}"
-				AND password = "{$_POST[password]}"';
+				WHERE username = "'.$_POST["username"].'"
+				AND password = "'.$_POST["password"].'"';
+				
 
 
 	$res = $mysqli->query($query);

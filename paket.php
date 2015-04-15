@@ -1,5 +1,5 @@
 <?php 
-$pageTitle ="T-shirtar";
+$pageTitle ="Våra stödpaket";
 include("inc/header.php"); ?>
 
 <?php /* $query = 'SELECT * FROM paket 

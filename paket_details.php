@@ -1,4 +1,5 @@
 <?php
+$pageTitle ="Paketdetaljer";
 include('inc/header.php');
 /*
 if(isset($_GET['id']))

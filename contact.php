@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 <?php //test
-$pageTitle ="Kontakta oss";
+$pageTitle ="Kontakt";
 include("inc/header.php"); ?>
 
 <div class="container">
@@ -99,7 +99,7 @@ include("inc/header.php"); ?>
 						</th>
 						<td>
 							<input type="text" name="address" id="address">
-							<p>Om du ser detta, var god lämna fältet blankt.</p>
+							<p>Om du ser detta, var god lämna fält blankt.</p>
 						</td>
 					</tr>
 				</table>

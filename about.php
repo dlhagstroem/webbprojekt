@@ -1,5 +1,5 @@
 <?php 
-$pageTitle ="Antimobbning";
+$pageTitle ="Om oss";
 include("inc/header.php"); ?>
 
 

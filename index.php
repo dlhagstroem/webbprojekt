@@ -1,5 +1,5 @@
 <?php 
-$pageTitle ="Coola T-shirtar";
+$pageTitle ="Hem";
 include("inc/header.php"); ?>
 
 <div id="mainstyle" class="container">

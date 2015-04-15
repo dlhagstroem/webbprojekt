@@ -1,6 +1,12 @@
 <html>
 <head>
 	<title><?php echo $pageTitle; ?></title>
+
+	<?php 	
+			session_start();
+			session_regenerate_id();
+	?>
+
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -16,8 +22,8 @@
 	<!--databaskoppling + utf8-->
 
 
-	<?php /*  	$mysqli = new mysqli("localhost","root","","webbprojekt");
-			$mysqli->set_charset("utf8"); */?>
+	<?php   $mysqli = new mysqli("localhost","root","","webbprojekt");
+			$mysqli->set_charset("utf8"); ?>
 
 
 </head>

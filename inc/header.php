@@ -29,5 +29,4 @@
 </head>
 <body>
 <?php include("nav.php"); ?>
-<?php include("footer.php"); ?>
 

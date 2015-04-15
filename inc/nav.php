@@ -34,11 +34,10 @@
 
         <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Inställningar</a></li>
-            <li class="divider"></li>
-
                 <?php if(isset($_SESSION['userId'])) {
-                  echo '<li><a href="logout.php">Logga ut</a></li>';
+                  echo '<li><a href="#">Inställningar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="logout.php">Logga ut</a></li>';
                 }
                   else {
                     echo '<li><a href="login.php">Logga in</a></li>

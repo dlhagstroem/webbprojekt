@@ -5,7 +5,7 @@ include ('inc/header.php');
 
 <?php 
 if(isset($_POST['username'])){
-	$query = 	'SELECT username, password, userId FROM users 
+	$query = 	'SELECT username, password, userId, admin FROM users 
 				WHERE username = "'.$_POST["username"].'"
 				AND password = "'.$_POST["password"].'"';
 				
@@ -18,6 +18,7 @@ if(isset($_POST['username'])){
 		$row = $res->fetch_object();
 		$_SESSION["username"] = $row->username;
 		$_SESSION["userId"] = $row->userId;
+		$_SESSION["admin"] = $row->admin;
 
 		header("Location:index.php");
 		}

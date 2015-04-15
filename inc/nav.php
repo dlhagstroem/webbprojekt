@@ -25,14 +25,16 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="contact.php">Kontakt</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php if(isset($_SESSION['userId'])) {
-          echo "{$_SESSION['username']}";
-          }
-          else 
-          {
-            echo "Mitt inlogg";
-          }
-        ?> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+
+                <?php if(isset($_SESSION['userId'])) {
+                echo "{$_SESSION['username']}";
+                }
+                  else {
+                    echo "Mitt inlogg";
+                  }
+              ?> 
+
         <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Inställningar</a></li>
@@ -42,10 +44,10 @@
                   echo '<li class="divider"></li>
                         <li><a href="logout.php">Logga ut</a></li>';
                 }
-                else {
-                  echo '<li><a href="login.php">Logga in</a></li>
+                  else {
+                    echo '<li><a href="login.php">Logga in</a></li>
                         <li><a href="register.php">Registrera dig</a></li>';
-                }
+                  }
                 ?>
             
           </ul>

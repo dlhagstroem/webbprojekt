@@ -37,6 +37,10 @@ if(isset($_GET['id']))
  					<td style="font-weight:bold;">Datum:</td>
  					<td>#####</td>
  				</tr>
+ 				<?php if($_SESSION["admin"] == true){
+ 					echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
+ 					echo "<a href='edit_paket.php'>Ändra paket</a>";
+ 				}?>
  			</tbody>
 			</table>
 <?php /*

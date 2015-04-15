@@ -17,9 +17,6 @@
         <li><a href="index.php">Hem</a></li>
         <li><a href="about.php">Om oss</a></li>
         <li><a href="paket.php">Våra stödpaket</a></li>
-
-        
-
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -39,10 +36,10 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Inställningar</a></li>
             <li><a href="#">Varukorg</a></li>
+            <li class="divider"></li>
 
                 <?php if(isset($_SESSION['userId'])) {
-                  echo '<li class="divider"></li>
-                        <li><a href="logout.php">Logga ut</a></li>';
+                  echo '<li><a href="logout.php">Logga ut</a></li>';
                 }
                   else {
                     echo '<li><a href="login.php">Logga in</a></li>
@@ -56,4 +53,5 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+</nav>
 </nav>

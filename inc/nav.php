@@ -35,7 +35,6 @@
         <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Inställningar</a></li>
-            <li><a href="#">Varukorg</a></li>
             <li class="divider"></li>
 
                 <?php if(isset($_SESSION['userId'])) {

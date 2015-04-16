@@ -2,12 +2,12 @@
 $pageTitle ="Paketdetaljer";
 include('inc/header.php');
 /*
-if(isset($_GET['id']))
-{
-	$query = 
-	'SELECT * FROM paket
-	WHERE id = "{$_GET['id']}"'
-};*/?>
+	if(isset($_GET['paketId'])){
+		$query = 
+		'SELECT * FROM paket
+		WHERE paketId = "'.$_GET["paketId"]}'"';
+	}*/
+?>
 
 <div id="mainstyle" class="container">
 		<div class="row">
@@ -37,20 +37,22 @@ if(isset($_GET['id']))
  					<td style="font-weight:bold;">Datum:</td>
  					<td>#####</td>
  				</tr>
- 				<?php if($_SESSION["admin"] == true){
- 					echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
- 					echo "<a href='edit_paket.php'>Ändra paket</a>";
- 				}?>
+ 				<!-- lägger till ändra och tabort om man är inloggad som admin !-->
+ 				<?php 
+ 					if(isset($_SESSION["admin"]) &&  $_SESSION["admin"] == true){
+ 						echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
+ 						echo "<a href='edit_paket.php'>Ändra paket</a>";
+ 					}
+ 				?>
  			</tbody>
 			</table>
 <?php /*
 $res = $mysqli->query($query);
-if($res->num_rows > 0)
-	{ ?>
+	if($res->num_rows > 0){ ?>
 
 		<?php $row = $res->fetch_object();?>
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>"> <!--större bild?-->
-		<p>Produktnummer: <?php echo {$row->id}?></p><br>
+		<p>Produktnummer: <?php echo {$row->paketId}?></p><br>
 		<h2>Namn: <?php echo {$row->name}?></h2><br>
 		<h3>Pris: <?php echo {$row->price}?></h3><br>
 		<p>Beskrivning: <?php echo {$row->description}?></p><br>

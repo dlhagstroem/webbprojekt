@@ -17,6 +17,12 @@
         <li><a href="index.php">Hem</a></li>
         <li><a href="about.php">Om oss</a></li>
         <li><a href="paket.php">Våra stödpaket</a></li>
+
+          <?php if(isset($_SESSION["admin"]) &&  $_SESSION["admin"] == true){
+                echo "<li><a href='add_paket.php'>Lägg till stödpaket</a></li>";
+                }
+          ?>
+
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

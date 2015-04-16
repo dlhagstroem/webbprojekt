@@ -9,7 +9,11 @@ if(isset($_POST['username']))
 	{ 
 	  try { 
       $query = "INSERT INTO users(username, password, email, firstName, lastName)
-				VALUES ('" .$_POST['username'] . "','" . $_POST['password'] ."','" . $_POST['email'] . "','" . $_POST['firstName'] . "','" . $_POST['lastName'] . "')"; 
+				VALUES ('" .$_POST['username'] . "',
+						'" . $_POST['password'] ."',
+						'" . $_POST['email'] . "',
+						'" . $_POST['firstName'] . "',
+						'" . $_POST['lastName'] . "')"; 
    		
    		$mysqli->query($query);
    		header('Location:index.php');

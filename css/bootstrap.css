@@ -4684,27 +4684,34 @@ a.list-group-item.active > .badge,
     font-size: 63px;
   }
 }
+
 .thumbnail {
   display: block;
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
 }
+
+a.thumbnail:hover {border: 2px solid #333; text-decoration: none; color:#333;}
+
+a.thumbnail {text-decoration: none; color:#333;}
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;
   margin-left: auto;
 }
-a.thumbnail:hover,
+
 a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #428bca;
+  text-decoration: none; color:#333;
 }
 .thumbnail .caption {
   padding: 9px;

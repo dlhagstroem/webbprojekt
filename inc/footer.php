@@ -10,6 +10,14 @@
 <!-- JavaScript -->
     <script src="css/dist/js/jquery-1.10.2.js"></script>
     <script src="css/dist/js/bootstrap.js"></script>
+    <script>
+    $(document).ready(function() {
+    $("#thumbnail").hover(
+        function() { $(this).addClass("Hover"); },
+        function() { $(this).removeClass("Hover"); }
+		    );
+		});
+    </script>
 
 </body>
 </html>

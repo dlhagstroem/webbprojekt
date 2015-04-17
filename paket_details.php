@@ -1,12 +1,11 @@
 <?php
 $pageTitle ="Paketdetaljer";
 include('inc/header.php');
-/*
 	if(isset($_GET['paketId'])){
 		$query = 
 		'SELECT * FROM paket
-		WHERE paketId = "'.$_GET["paketId"]}'"';
-	}*/
+		WHERE paketId = "'.$_GET["paketId"]'"';
+	}
 ?>
 
 <div id="mainstyle" class="container">
@@ -46,7 +45,7 @@ include('inc/header.php');
  				?>
  			</tbody>
 			</table>
-<?php /*
+<?php
 $res = $mysqli->query($query);
 	if($res->num_rows > 0){ ?>
 
@@ -59,7 +58,7 @@ $res = $mysqli->query($query);
 		<p>Datum: <?php echo {$row->created_at}</p>?>
 
 
-	<?php } */?>
+	<?php } ?>
 
 		</div> <!-- col end -->
 		<div class="col-md-8">

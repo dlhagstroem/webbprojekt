@@ -30,19 +30,12 @@ $res = $mysqli->query($query);
 
 			<table class="table">
  			<tbody>
- 				<tr>
- 					<td style="font-weight:bold;">Produktnummer:</td>
- 					<td><?php echo $row->paketId;?></td>
- 				</tr>
  	
  				<tr>
  					<td style="font-weight:bold;">Pris:</td>
  					<td><?php echo $row->price;?></td>
  				</tr>
- 				<tr>
- 					<td style="font-weight:bold;">Datum:</td>
- 					<td><?php echo $row->created_at;?></td>
- 				</tr>
+ 	
  				<tr>
  					<td colspan="2">
  					<?php 

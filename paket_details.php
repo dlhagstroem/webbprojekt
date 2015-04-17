@@ -35,6 +35,11 @@ $res = $mysqli->query($query);
  					<td style="font-weight:bold;">Pris:</td>
  					<td><?php echo $row->price;?></td>
  				</tr>
+
+ 				<tr valign="top">
+ 					<td style="font-weight:bold;">Paketet:</td>
+ 					<td><?php echo $row->included;?></td>
+ 				</tr>
  	
  				<tr>
  					<td colspan="2">

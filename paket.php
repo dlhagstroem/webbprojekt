@@ -25,7 +25,7 @@ if($res->num_rows > 0)
 		<a href="paket_details.php?paketId=<?php echo $row->paketId?>" style="text-decoration:None;">
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>"></a>
 			<blockquote style="border:0px;">
-			<p style="min-height:200px;"><?php echo $row->org; ?></p>
+			<p style="min-height:200px;"><?php echo $row->orginfo; ?></p>
 			<p><?php echo $row->included; ?></p>
 			</blockquote>
 		<h4 class="text-center"><?php echo $row->price; ?> kr</h4>

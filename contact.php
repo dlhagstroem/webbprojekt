@@ -53,55 +53,62 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $pageTitle ="Kontakt";
 include("inc/header.php"); ?>
 
-<div class="container">
+<div id="mainstyle" class="container">
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-lg-12">
+		<h1>Kontakta oss? <small>Fyll i formuläret nedan!</small></h1>
+				<?php 
+				if (isset($_GET['status']) AND $_GET["status"] == "sent"){ ?>
+						<div class='alert alert-success' role='alert'>Tack för ditt meddelande!</div>
 
-	<h1 class="text-center" style="padding-bottom: 0.7em;">Kontakt</h1>
-	<?php 
-	if (isset($_GET['status']) AND $_GET["status"] == "sent"){ ?>
-			<p>Tack för ditt meddelande!</p>
+			<?php } 
+				else { ?>
+		</div>
 	</div>
-	
-	<?php
-	} else { ?>
+	<div class="row" style="padding-top: 0.7em;">
+		<div class="col-md-8">
 
-				<form role="form" method="post" action="contact.php">
-					<div class="form-group">
+			<form class="form-horizontal"  role="form" method="post" action="contact.php">
+				<div class="form-group">
+			    	<label for ="name" class="col-sm-2 control-label">Ditt Namn:</label>
+			    	<div class="col-sm-10">
+			      		<input class="form-control" type="text" name="name" id="name" placeholder="Fyll i ditt namn">
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for ="email" class="col-sm-2 control-label">Din Epost</label>
+			    	<div class="col-sm-10">
+			    		<input class="form-control" type="text" name="email" id="email" placeholder="Fyll i din e-post">
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for ="message" class="col-sm-2 control-label">Meddelande</label>
+			    	<div class="col-sm-10">
+			    		<textarea class="form-control" name="message" id="message" placeholder="Ditt meddelande här"></textarea>
+			    	</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for ="message" class="col-sm-2 control-label">Human?</label>
+			    	<div class="col-sm-10">
+			    		<!-- fält som inte syns. för att kolla om robotspammare fyller i det -->
+						<table><thead><tr style="display: none;">
+								<td><label for ="address">Address</label></td>
+						</tr></thead><tbody><tr>
+								<td><input type="text" name="address" id="address">
+								<p style="font-style: italic; font-size:11px;">Lämna då denna ruta blank</p>
+						</tr></tbody></table>
+						<button type="submit" class="btn btn-default">Submit</button>
+			    	</div>
+			  	</div>
+			</form>				
 				
-									<label for ="name">Namn</label>
-									<input class="form-control" type="text" name="name" id="name">
-								
-									<label for ="email">Email</label>
-									<input class="form-control" type="text" name="email" id="email">
-								
-									<label for ="message">Meddelande</label>
-									<textarea class="form-control" name="message" id="message"></textarea>
-							
-							<!-- fält som inte syns. för att kolla om robotspammare fyller i det -->
-								<table>
-								<tr style="display: none;">
-								<th>
-								<label for ="address">Address</label>
-								</th>
-								<td>
-								<input type="text" name="address" id="address">
-								<p>Om du ser detta, var god lämna fält blankt.</p>
-								</td>
-								</tr>
-								<table>
-						
-									<br><input class="form-control" type="submit" value="Skicka">
-					</div>
-				</form>
-	<?php
-	} 
-	?>
-		</div>
+		</div> <!-- col end -->
+		<div class="col-md-4">
+			
+					
+		</div> <!-- col end -->
+	</div> <!-- row end -->
+</div> <!-- container end -->
+	<?php }; ?>
 
-	<div class="row">
-		<div class="col-md-12">
 <?php include("inc/footer.php"); ?>
-		</div>
-	</div>
-</div>

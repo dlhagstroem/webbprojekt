@@ -3,7 +3,7 @@ include('inc/header.php');
 
 	if(isset($_GET['paketId']) && ($_SESSION['userId']) && $_SESSION['admin'] == true){
 		$query = 
-		'DELETE FROM products
+		'DELETE FROM paket
 		WHERE paketId = "'.$_GET["paketId"].'"';
 
 		$mysqli->query($query);

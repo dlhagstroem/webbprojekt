@@ -1,10 +1,11 @@
 <?php
 $pageTitle ="Paketdetaljer";
 include('inc/header.php');
+
 	if(isset($_GET['paketId'])){
 		$query = 
 		'SELECT * FROM paket
-		WHERE paketId = "'.$_GET["paketId"]'"';
+		WHERE paketId = "'.$_GET["paketId"].'"';
 	}
 ?>
 
@@ -37,12 +38,7 @@ include('inc/header.php');
  					<td>#####</td>
  				</tr>
  				<!-- lägger till ändra och tabort om man är inloggad som admin !-->
- 				<?php 
- 					if(isset($_SESSION["admin"]) &&  $_SESSION["admin"] == true){
- 						echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
- 						echo "<a href='edit_paket.php'>Ändra paket</a>";
- 					}
- 				?>
+ 				
  			</tbody>
 			</table>
 <?php
@@ -51,11 +47,17 @@ $res = $mysqli->query($query);
 
 		<?php $row = $res->fetch_object();?>
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>"> <!--större bild?-->
-		<p>Produktnummer: <?php echo {$row->paketId}?></p><br>
-		<h2>Namn: <?php echo {$row->name}?></h2><br>
-		<h3>Pris: <?php echo {$row->price}?></h3><br>
-		<p>Beskrivning: <?php echo {$row->description}?></p><br>
-		<p>Datum: <?php echo {$row->created_at}</p>?>
+		<p>Produktnummer: <?php echo $row->paketId;?></p><br>
+		<h2>Namn: <?php echo $row->name;?></h2><br>
+		<h3>Pris: <?php echo $row->price;?></h3><br>
+		<p>Beskrivning: <?php echo $row->description;?></p><br>
+		<p>Datum: <?php echo $row->created_at;?></p>
+				<?php 
+ 					if(isset($_SESSION["admin"]) &&  $_SESSION["admin"] == true){
+ 						echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
+ 						echo "<a href='edit_paket.php'>Ändra paket</a>";
+ 					}
+ 				?>
 
 
 	<?php } ?>

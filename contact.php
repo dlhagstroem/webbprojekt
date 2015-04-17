@@ -76,7 +76,7 @@ include("inc/header.php"); ?>
 			    	</div>
 			  	</div>
 			  	<div class="form-group">
-			    	<label for ="email" class="col-sm-2 control-label">Din Epost</label>
+			    	<label for ="email" class="col-sm-2 control-label">Din E-post</label>
 			    	<div class="col-sm-10">
 			    		<input class="form-control" type="text" name="email" id="email" placeholder="Fyll i din e-post">
 			    	</div>
@@ -88,16 +88,12 @@ include("inc/header.php"); ?>
 			    	</div>
 			  	</div>
 			  	<div class="form-group">
-			    	<label for ="message" class="col-sm-2 control-label">Human?</label>
-			    	<div class="col-sm-10">
+			    	<div class="col-sm-10 col-sm-offset-2">
 			    		<!-- fält som inte syns. för att kolla om robotspammare fyller i det -->
-						<table><thead><tr style="display: none;">
-								<td><label for ="address">Address</label></td>
-						</tr></thead><tbody><tr>
-								<td><input type="text" name="address" id="address">
-								<p style="font-style: italic; font-size:11px;">Lämna då denna ruta blank</p>
-						</tr></tbody></table>
-						<button type="submit" class="btn btn-default">Submit</button>
+								<input style="display: none;" type="text" name="address" id="address">
+								<p style="display: none;">Lämna denna ruta blank.</p>
+						
+						<button type="submit" class="btn btn-default">Skicka</button>
 			    	</div>
 			  	</div>
 			</form>				

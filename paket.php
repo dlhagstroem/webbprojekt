@@ -2,9 +2,9 @@
 $pageTitle ="Våra stödpaket";
 include("inc/header.php"); ?>
 
-<?php /* $query = 'SELECT * FROM paket 
+<?php $query = 'SELECT * FROM paket 
 				ORDER BY created_at DESC' ?>
-<?php $res = $mysqli->query($query); */?>
+<?php $res = $mysqli->query($query); ?>
 
 	<div id="mainstyle" class="container">
 		<div class="row">
@@ -14,7 +14,7 @@ include("inc/header.php"); ?>
 		</div> <!-- row end -->
 		<div class="row">
 
-<?php /*
+<?php
 if($res->num_rows > 0)
 {
 	while($row = $res->fetch_object())
@@ -29,47 +29,10 @@ if($res->num_rows > 0)
 		<img class='img-responsive' src="<?php echo $row->img_src; ?>">
 		<a href="paket_details.php?id=<?php echo {$row->paketId}"?>>Läs mer</a><br>
 		</div>
-	</div> <!-- col end-->
+	</div>
 	
 	<?php } ?>
-<?php } */?>
-
-		<div class="col-xs-6 col-md-3">
-			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/250x200">
-			<h3>Title, <small>0 kr</small></h3>
-			<p>beskrivning</p>
-			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
-			</div>
-		</div> <!-- col end -->
-		<div class="col-xs-6 col-md-3">
-			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/250x200">
-			<h3>Title, <small>0 kr</small></h3>
-			<p>beskrivning</p>
-			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
-			</div>
-		</div> <!-- col end -->
-		<div class="col-xs-6 col-md-3">
-			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/250x200">
-			<h3>Title, <small>0 kr</small></h3>
-			<p>beskrivning</p>
-			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
-			</div>
-		</div> <!-- col end -->
-		<div class="col-xs-6 col-md-3">
-			<div class="thumbnail">
-			<img class='img-responsive' src="http://placehold.it/250x200">
-			<h3>Title, <small>0 kr</small></h3>
-			<p>beskrivning</p>
-			<p align="center">
-			<a href="paket_details.php" class="btn btn-primary" role="button">Läs mer</a></p>
-			</div>
-		</div> <!-- col end -->
+<?php } ?>
 
 	</div> <!-- row end -->
 </div> <!-- container end -->

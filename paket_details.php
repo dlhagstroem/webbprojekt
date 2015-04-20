@@ -45,8 +45,8 @@ $res = $mysqli->query($query);
  					<td colspan="2">
  					<?php 
  					if(isset($_SESSION["admin"]) &&  $_SESSION["admin"] == true){
- 						echo "<a href='delete_paket.php'>Ta bort paket</a><br>";
- 						echo "<a href='edit_paket.php'>Ändra paket</a>";
+ 						echo "<a href='delete_paket.php?paketId={$row->paketId}'>Ta bort paket</a><br>";
+ 						echo "<a href='edit_paket.php?paketId={$row->paketId}'>Ändra paket</a>";
  					}?>
  				</td>
  				</tr>

@@ -21,7 +21,7 @@ if($res->num_rows > 0)
 	{ ?>
 
 	<div class="col-xs-6 col-md-3">
-		<a class="thumbnail" href="paket_details.php?paketId=<?php echo $row->paketId?>">
+		<a class="thumbnail" href="paket_details.php?paketId=<?php echo $row->paketId; ?>">
 		
 			<img class='img-responsive' src="<?php echo $row->img_src; ?>">
 				<blockquote style="border:0px;">

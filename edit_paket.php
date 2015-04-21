@@ -1,5 +1,5 @@
 <?php
-include('template.php');
+include('inc/header.php');
 
 $content = "";
 
@@ -12,6 +12,9 @@ if(isset($_GET['id']))
 		SET name = "{$_POST['name']}", 
 		price = "{$_POST['price']}", 
 		description = "{$_POST['description']}"
+		orginfo = "{$_POST['orginfo']}"
+		included = "{$_POST['included']}"
+		img_src = "{$_POST['img_src']}"
 		WHERE id = "{$_GET['id']}"
 END;
 		$mysqli->query($query);	
@@ -31,11 +34,13 @@ $content = <<<END
 	<input type="text" name="name" value="{$row->name}">
 	<input type="text" name="price" value="{$row->price}">
 	<textarea name="description">{$row->description}</textarea>
+	<textarea name="orginfo">{$row->orginfo}</textarea>
+	<textarea name="included">{$row->included}</textarea>
+	<input type="text" name="img_src" value="{$row->img_src}">
 	<input type="submit" Value="Spara">
 	</form>
 END;
 }
 }
-echo $navigation;
 echo $content;
 ?>

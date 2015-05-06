@@ -1,4 +1,5 @@
-#mainstyle {background-color:#F2F2F2;}
+#mainstyle {background-color:#F2F2F2; border-bottom:5px solid #BCAD90;
+	border-top:10px solid #BCAD90;}
 #stopbully {background-color:#AB0717; padding: 6px; margin: 0 10px 10px 10px;}
 .framebully {background-color:transparent; border:2px dashed #fff;
 	padding: 13px; color:#fff;}
@@ -14,3 +15,62 @@
 
 .thumbs {text-decoration: none; color:#333;}
 .thumbs a:hover {border: 2px solid #333; text-decoration: none; color:#333;}
+#main-nav {background-color:#91966E; width:100%; margin:0px 0px 0px 0px;}
+#main-nav a {color: #fff; text-transform:none;}
+#main-nav a:hover {color: #000; text-transform:none;}
+.mainheading {font-family: 'Lora', serif; color: #9FA9A0; text-shadow: 0.08em 0.080em 0 rgba(0,0,0,0);
+    line-height:100%; letter-spacing:1px; font-style:italic; font-weight: 700;}
+
+
+    #wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+}

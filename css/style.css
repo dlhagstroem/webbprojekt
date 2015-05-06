@@ -1,5 +1,8 @@
-#mainstyle {background-color:#F2F2F2; border-bottom:5px solid #BCAD90;
-	border-top:10px solid #BCAD90;}
+#mainstyle {background-color:#F2F2F2; border-bottom:5px solid #9FA9A0;
+	border-top:10px solid #9FA9A0; -webkit-box-shadow: 2px 2px 19px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 2px 19px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 2px 19px 0px rgba(50, 50, 50, 0.75); 
+	border-left: 1px solid #BCAD90; border-right: 1px solid #BCAD90;}
 #stopbully {background-color:#AB0717; padding: 6px; margin: 0 10px 10px 10px;}
 .framebully {background-color:transparent; border:2px dashed #fff;
 	padding: 13px; color:#fff;}
